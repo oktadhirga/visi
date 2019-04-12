@@ -32,7 +32,7 @@
 #
 **/
 
-require_once 'vendor/autoload.php';=
+require_once 'vendor/autoload.php';
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
@@ -146,6 +146,7 @@ if (isset($_POST["delete"])) {
   <input type="submit" name="submit">
 </form>
 <br>
+<h3>Image Gallery</h3>
 
 
 <!-- Image Gallery -->
@@ -158,7 +159,6 @@ $listBlobsOptions = new ListBlobsOptions();
 do{
     $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     $blobs = $result->getBlobs();
-    echo "<h3>Image Gallery</h3>";
     echo "These are ".count($blobs)." image in the container: ";
     echo "<br><br>";
     foreach ($blobs as $blob) : ?>
