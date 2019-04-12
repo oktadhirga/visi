@@ -136,7 +136,7 @@ if (isset($_POST["delete"])) {
 <head>
     <title>Upload Image</title>
     <link rel="stylesheet" href="css/master.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 </head>
 <body>
 
